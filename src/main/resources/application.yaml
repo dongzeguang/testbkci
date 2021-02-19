@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: testci
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: ""
+    basedir: /opt/logs/${spring.application.name}
+  port: 35001
+management:
+  security:
+    enabled: false
+application:
+  healthz-min-time: 0
+  healthz-max-time: 10
